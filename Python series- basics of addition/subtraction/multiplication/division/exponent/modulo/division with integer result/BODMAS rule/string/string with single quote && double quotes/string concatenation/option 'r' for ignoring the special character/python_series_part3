@@ -1,0 +1,140 @@
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> nums = [1,2,3,4,5]
+
+>>> nums
+[1, 2, 3, 4, 5]
+
+>>> nums[0]
+1
+
+>>> nums[-1]
+5
+
+>>> nums[5]
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    nums[5]
+IndexError: list index out of range
+
+>>> name = 'sundar'
+
+>>> name[6]
+Traceback (most recent call last):
+  File "<pyshell#6>", line 1, in <module>
+    name[6]
+IndexError: string index out of range
+
+>>> value = 1.0
+
+>>> value[0]
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    value[0]
+TypeError: 'float' object is not subscriptable
+
+>>> names = ['sundar', 'indra', 'muni', 'raji']
+
+>>> names
+['sundar', 'indra', 'muni', 'raji']
+
+>>> names[0]
+'sundar'
+
+>>> names[-1]
+'raji'
+
+>>> mixed = [1.0, 2, 'sundar'] (we can create mixed list also of different datatypes)
+
+>>> mixed
+[1.0, 2, 'sundar']
+
+>>> mixed[0]
+1.0
+
+>>> inside = [names, mixed] (we can have list inside list like this]
+
+>>> inside
+[['sundar', 'indra', 'muni', 'raji'], [1.0, 2, 'sundar']]
+
+>>> inside[0]
+['sundar', 'indra', 'muni', 'raji']
+
+>>> inside[-1]
+[1.0, 2, 'sundar']
+
+>>> mixed[0:]
+[1.0, 2, 'sundar']
+
+>>> mixed[0:2]
+[1.0, 2]
+
+>>> mixed[:2]
+[1.0, 2]
+
+>>> mixed.append(45)
+
+>>> mixed
+[1.0, 2, 'sundar', 45]
+
+>>> mixed.insert(2,34)
+
+>>> mixed
+[1.0, 2, 34, 'sundar', 45]
+
+>>> mixed.remove(34)
+>>> mixed
+[1.0, 2, 'sundar', 45]
+>>> mixed.insert(2,45)
+>>> mixed
+[1.0, 2, 45, 'sundar', 45]
+>>> mixed.pop(1)
+2
+>>> mixed
+[1.0, 45, 'sundar', 45]
+>>> mixed.pop()
+45
+>>> mixed
+[1.0, 45, 'sundar']
+
+>>> mixed.insert()
+Traceback (most recent call last):
+  File "<pyshell#41>", line 1, in <module>
+    mixed.insert()
+TypeError: insert() takes exactly 2 arguments (0 given)
+
+>>> mixed.insert(2,67)
+
+>>> mixed.insert(3,89)
+
+>>> mixed
+[1.0, 45, 67, 89, 'sundar']
+
+>>> del mixed[2:]
+
+>>> mixed
+[1.0, 45]
+
+>>> mixed.insert(2,10)
+
+>>> mixed.insert(3,33)
+
+>>> mixed
+[1.0, 45, 10, 33]
+>>> del mixed[1:3]
+>>> mixed
+[1.0, 33]
+>>> 
+>>> mixed
+[1.0, 33]
+>>> mixed.extend([22,66,77,88]) adding multiple values
+>>> mixed
+[1.0, 33, 22, 66, 77, 88]
+(built in datatypes)
+>>> min(mixed)
+1.0
+>>> max(mixed)
+88
+>>> sum(mixed)
+287.0
+
