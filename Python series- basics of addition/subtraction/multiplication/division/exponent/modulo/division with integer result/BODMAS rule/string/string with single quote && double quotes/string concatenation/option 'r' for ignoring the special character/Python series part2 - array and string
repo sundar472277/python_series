@@ -1,0 +1,114 @@
+
+-7    -6    -5    -4   -3    -2   -1
+ Y     O     U     T    U     B    E
+ 0     1    2      3    4     5    6
+
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+>>> name (try to print without assigning value. It will throw error)
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    name
+NameError: name 'name' is not defined
+
+>>> name = 'youtube' (assigned for first time but when you assign second time value will be overrided)
+
+>>> name = 'sundar' (assigned 2nd time)
+
+>>> name
+'sundar' (displayed overrided value)
+
+>>> name = 'youtube'
+
+>>> name
+'youtube'
+
+>>> x = 1
+
+>>> y = 2
+
+>>> x + y
+3
+
+>>> 1 + y
+3
+
+>>> 1 + x
+2
+
+>>> x
+1
+
+>>> y
+2
+
+>>> x = 10
+
+>>> x
+10
+
+>>> name
+'youtube'
+
+>>> name[0]
+'y'
+
+>>> name[6]
+'e'
+
+>>> name[-1]
+'e'
+
+>>> name[-2]
+'b'
+
+>>> name[7]
+
+Traceback (most recent call last):
+  File "<pyshell#20>", line 1, in <module>
+    name[7]
+IndexError: string index out of range
+
+>>> name[-8]
+Traceback (most recent call last):
+  File "<pyshell#21>", line 1, in <module>
+    name[-8]
+IndexError: string index out of range
+
+>>> name[0:2] (array will consider starting range but will not consider ending range)
+'yo'
+
+>>> name[3:]
+'tube'
+
+>>> name[3:2] (try to print reverse order of array. Displayed empty value in single quotes)
+''
+
+>>> name[:6]
+'youtub'
+
+>>> name[-1:-5]  (negative values also should read from left to right)
+''
+
+>>> name[-5:-3]
+'ut'
+
+>>> name[-5:]
+'utube'
+
+>>> name[:-2]
+'youtu'
+
+>>> name[0]='m'  (once assigned a value to array we cannot change it again)
+Traceback (most recent call last):
+  File "<pyshell#30>", line 1, in <module>
+    name[0]='m'
+TypeError: 'str' object does not support item assignment
+
+>>> name[1:6]="sundar1"
+Traceback (most recent call last):
+  File "<pyshell#31>", line 1, in <module>
+    name[1:6]="sundar1"
+TypeError: 'str' object does not support item assignment
+>>> 
