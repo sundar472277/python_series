@@ -1,0 +1,48 @@
+	Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
+	Type "help", "copyright", "credits" or "license()" for more information.
+	>>> 1 + 2
+	3
+	>>> 3 - 2
+	1
+	>>> 3 * 2
+	6
+	>>> 3 / 2
+	1.5    ( quotient - but always it will be displayed in float for python)
+	>>> 2 / 2
+	1.0 ( see here displayed as "float" in python. Python defaults to 'FLOAT" in case of division.)
+	>>> 3 ** 2
+	9 (exponent 3 to the power of 2)
+	>>> 45 // 2
+	22 (quotient. Truncated the decimal values after dot)
+	>>> 45 / 2
+	22.5 (completely solved.)
+	>>> 7 % 2
+	1 (remainder)
+	>>> "naveen"
+	'naveen' (string with double quote)
+	>>> 'naveen'
+	'naveen' (string with single quote)
+	>>> print("naveen hai")
+	naveen hai
+	>>> print('hai hello')
+	hai hello
+	>>> print('naveen's laptop')
+	  
+	SyntaxError: invalid syntax (handle single and double quote properly or syntax error)
+	>>> print("naveen's laptop")
+	  
+	naveen's laptop
+	>>> print("naveen\'s laptop")  (use of back slash for ignoring symbols)
+	  
+	naveen's laptop
+	>>> print("naveen \"laptop\"")
+	  
+	naveen "laptop"
+	>>> print("c:\programs\naveen")
+	  
+	c:\programs
+	aveen
+	>>> print(r'c:\programs\naveen') (use 'r' for printing "RAW string" by ignoring symbols)
+	  
+	c:\programs\naveen
+	>>> 
