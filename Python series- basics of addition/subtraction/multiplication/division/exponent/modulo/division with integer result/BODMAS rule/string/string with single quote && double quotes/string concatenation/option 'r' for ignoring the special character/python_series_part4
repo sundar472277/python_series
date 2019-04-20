@@ -1,0 +1,60 @@
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+>>> tup = (12,13,14,15,16) (instead if "[]" use "()" for tuple)
+
+>>> tup
+(12, 13, 14, 15, 16)
+
+>>> tup[0] ==> while calling you can use "[]"
+12
+
+>>> tup[0] = 8 (we cannot alter or reassign value in tuple)
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    tup[0] = 8
+TypeError: 'tuple' object does not support item assignment
+
+>>> tup = (12,'hai',13,14) ==> mixed tuple is possible
+
+>>> tup
+(12, 'hai', 13, 14)
+
+>>> tup = (1,2.0,'hai')
+
+>>> tup
+(1, 2.0, 'hai')
+>>> 
+
+(when we will use tuple? --> when we want to use set of values but don’t want to edit. In that case we can use tuple) since we cannot edit tuple, TRAVERSING the tuple will be very fast. Access is very fast(ex: search is fast in tuple when compared with list]
+
+"List" is mutable.
+
+ "Tuple"  is same as " list" but "not mutable"
+
+Set;
+
+{} --> flower bracket
+Mutable
+No proper indexing for values inside set
+It will use "hash" mechanism for displaying values
+
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> s = {12,5,20,8} ==> used {} brackets
+>>> s
+{8, 20, 12, 5}
+
+>>> s = {22,25,14,21,5}
+>>> s
+{5, 14, 21, 22, 25} ==> don’t assume set will sort the values. It will not
+>>> s[0]
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    s[0]
+TypeError: 'set' object does not support indexing (since values are not organized we cannot use "indexing concept")
+>>> s.add(15) ==> set us mutable
+>>> s
+{5, 14, 15, 21, 22, 25}
+>>> 
+
